@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    padding: 0px;
+    margin: auto 0;
+    background-image: linear-gradient(45deg, #941C2F, #03191E);
+}
+
+div#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #941C2F;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+color: #941C2F;
+    background-color: white;
+
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#container {
+    margin: auto;
+    margin-top: 20px;
+    height: fit-content;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+   
+}
+
+div.box {
+    height: 400px;
+    width:90%;
+    border: 2px solid white;
+ 
+   
+}
+
+.boximg {
+    height: 100%;
+    width: 100%;
+}

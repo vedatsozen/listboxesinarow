@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO CHANGE BOXES AMOUNT IN A ROW WITH JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+<p style="margin: auto; color: white; margin-top: 20px;">You can choose how many pictures will be displayed in one row.</p>
+
+<div id="buttons">
+<button id="btn1">1</button>
+<button id="btn2">2</button>
+<button id="btn3">3</button>
+<button id="btn4">4</button>
+</div>
+
+<div id="container"></div>
+
+
+<script>
+
+let container = document.getElementById("container");
+
+for ( let i = 1; i < 13 ; i++ ) {
+
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("box");
+
+  let img = document.createElement("img"); // img değişkenini oluştur
+  img.classList.add("boximg"); // Resim elementine sınıf ekleniyor
+
+  img.src = "resim" + i + ".jpg"; // Resmin src özelliği belirleniyor
+
+  newDiv.appendChild(img);
+  container.appendChild(newDiv);
+}
+
+
+
+$(document).ready(function() {
+
+$("#btn1").click(function() {
+
+$(".box").css({"width": "90%" })
+
+});
+
+$("#btn2").click(function() {
+
+$(".box").css({"width": "48%" });
+
+});
+
+$("#btn3").click(function() {
+
+$(".box").css({"width": "30%" })
+});
+
+$("#btn4").click(function() {
+
+$(".box").css({"width": "24%" })
+});
+
+
+
+});
+
+
+
+</script>
+</body>
+</html>
